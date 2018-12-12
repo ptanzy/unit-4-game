@@ -53,18 +53,30 @@ function gemClicked(gem){
   }
 }
 
+$("#red").on("click", function(){
+  gemClicked(this.id);
+});
+
+$("#blue").on("click", function(){
+  gemClicked(this.id);
+});
+
+$("#yellow").on("click", function(){
+  gemClicked(this.id);
+});
+
+$("#green").on("click", function(){
+  gemClicked(this.id);
+});
+
+$("#reload").on("click", function(){
+  setup();
+});
+
 $(window).on('load', function() {
   setup();
-  $("#red").on("click", function(){
-    gemClicked(this.id)
-  });
-  $("#blue").on("click", function(){
-    gemClicked(this.id)
-  });
-  $("#yellow").on("click", function(){
-    gemClicked(this.id)
-  });
-  $("#green").on("click", function(){
-    gemClicked(this.id)
-  });
+  losses = 0;
+  setLossText();
+  wins = 0;
+  setWinText();
 });
