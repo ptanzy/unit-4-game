@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lets Hang, Man!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand navbar-default bg-default nav_custom">
+        <a class="navbar-brand" href="#">Hang Man: Historical</a>
+
+        <div class="collapse navbar-collapse" id=navButtons>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Opt 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Opt 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Opt 3</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5">
+          <div>
+            <h1>Crystal Collector!</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div>
+            <p>You will be given a random number at the start of the game</p>
+            <p>Four Crystals are below and clicking one adds a specific amount to your total score</p>
+            <p>A crystals value is hidden until it is clicked upon</p>
+            <p>A crystal's value changes at the start of each game</p>            
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4" id="target-num"></div>
+        <div class="col-md-1">
+          <p id="win"></p>
+          <p id="loss"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2" id="red">
+          <img scr="#" />
+        </div>
+        <div class="col-md-2" id="blue">
+          <img scr="#" />
+        </div>  
+        <div class="col-md-2" id="yellow">
+          <img scr="#" />
+        </div>
+        <div class="col-md-2" id="green">
+          <img scr="#" />
+        </div>                      
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div>
+            <p>Your total score is...</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div id="total-score">0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- script needs to be at the end of the document so that the elements
+         have loaded by the time that we need them -->
+  </body>
+  <script type='text/javascript' src='assets/javascript/game.js'></script>
+
+</html>
