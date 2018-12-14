@@ -24,7 +24,7 @@ function rand(min, max) {
 }
 
 function setTargetNumText() {
-  $("#target-num").text(targetAmount);
+  $("#target-num").html("<p>"+targetAmount+"</p>");
 }
 
 function setWinText() {
@@ -36,7 +36,7 @@ function setLossText() {
 }
 
 function setPlayerAmtText() {
-  $("#total-score").text(playerAmount);
+  $("#total-score").html("<p>"+playerAmount+"</p>");
 }
 
 function gemClicked(gem){
@@ -69,14 +69,14 @@ $("#green").on("click", function(){
   gemClicked(this.id);
 });
 
-$("#reload").on("click", function(){
-  setup();
-});
-
-$(window).on('load', function() {
+$("#refresh").on("click", function(){
   setup();
   losses = 0;
   setLossText();
   wins = 0;
   setWinText();
+});
+
+$(window).on('load', function() {
+  setup();
 });

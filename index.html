@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>Crystals, Crystals Everywhere!</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Crafty+Girls" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css" >
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   </head>
@@ -14,14 +16,14 @@
     
     <div class="container">
       <div class="row">
-        <div class="col-md-5">
+        <div class="col-md-7">
           <div>
-              <img src="assets/images/title.png" alt="crystal collector title" height="110" width="500">
+              <img src="assets/images/title.png" alt="crystal collector title" height="110" width="475">
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
           <div>
             <p>You will be given a random number at the start of the game</p>
             <p>Four Crystals are below and clicking one adds a specific amount to your total score</p>
@@ -31,36 +33,36 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4" id="target-num"></div>
+        <div class="col-md-5" id="target-num"><p>0</p></div>
         <div class="col-md-1">
           <p id="wins">Wins: 0</p>
           <p id="losses">Losses: 0</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2" id="red">
-          <img src="assets/images/red.png" alt="ruby" height="110" width="100">
+        <div class="col-md-1" id="red">
+          <img src="assets/images/red.png" alt="ruby" height="75" width="60">
         </div>
-        <div class="col-md-2" id="blue">
-          <img src="assets/images/blue.png" alt="diamond" height="110" width="100">
+        <div class="col-md-1" id="blue">
+          <img src="assets/images/blue.png" alt="diamond" height="75" width="60">
         </div>  
-        <div class="col-md-2" id="yellow">
-          <img src="assets/images/yellow.png" alt="sapphire" height="110" width="100">
+        <div class="col-md-1" id="yellow">
+          <img src="assets/images/yellow.png" alt="sapphire" height="75" width="60">
         </div>
-        <div class="col-md-2" id="green">
-          <img src="assets/images/green.png" alt="emerald" height="110" width="100">
+        <div class="col-md-1" id="green">
+          <img src="assets/images/green.png" alt="emerald" height="75" width="60">
         </div>                      
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5">
           <div>
             <p>Your total score is...</p>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
-          <div id="total-score">0</div>
+        <div class="col-md-5">
+          <div id="total-score"><p>0</p></div>
         </div>
         <div class="col-md-1">
           <div id="refresh"><img src="assets/images/refresh.png" alt="refresh" height="100" width="110"></div>
